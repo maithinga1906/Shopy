@@ -1,0 +1,48 @@
+
+.header{
+	display: flex;
+	justify-content: space-between;
+	grid-area: header; 
+}
+.navigation{
+	grid-area: navigation;
+	background-color: #595959;
+}
+.menu{
+	grid-area: menu; 
+	background-color: green;
+}
+.main{
+	grid-area: main; 
+	background-color: pink;
+}
+.footer{
+	grid-area: footer; 
+	background-color: orange;
+}
+.tops{
+	background-color: red;
+	grid-area: tops; 
+}
+.about{
+	grid-area: about; 
+	background-color:  #800000;
+}
+.bot{
+	grid-area: bot; 
+	background-color: #600080;
+}
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header  '
+    'tops tops'
+    'navigation navigation'
+    'menu main '
+    'menu  main'
+    'menu  main '
+    'about about'
+    'bot bot'
+    'footer footer ';
+  grid-auto-columns: 200px auto;
+}
